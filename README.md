@@ -11,7 +11,7 @@ OrangePi Zero 2W (1.5GB) with Ubuntu22 kernel 6.1.31-sun50iw9
 - Run ``sudo orangepi-add-overlay gc9a01-overlay.dts`` (This will compile and setup everything)
 - Reboot to apply changes
 ## Check that everything it is ok
-- Check that ``ls /dev/fb*`` shows ``/dev/fb0  /dev/fb1``. Previously to this repo only existed ``dev/fb0``.
+- Check that ``ls /dev/fb*`` shows ``/dev/fb0  /dev/fb1``. Previously to this steps only existed ``dev/fb0``.
 - Check that ``/boot/overlay-user/gc9a01-overlay.dtbo`` exists.
 - Check ``cat /boot/orangepiEnv.txt`` that contains the line: ``user_overlays=gc9a01-overlay`` (DO NOT ADD IT MANUALLY)
 ```
