@@ -45,7 +45,9 @@ make
 ./earth
 ```
 # Useful information for modification
-
+## Based on
+[RaspberryPi (gc9a01-overlay)](https://github.com/juliannojungle/gc9a01-overlay/blob/main/gc9a01-overlay.dts)
+[OrangePi (ili9486 and so .dts)](https://github.com/dev-null2019/orangepizero2w35tft/blob/main/joyit35a-overlay.dts)
 ## Allwinner pin numeration
 You can see that pins are called by Letter and Number: Example: P**H5** or P**I7**...  
 To convert to .dts format: ```<&pio 8 6 0>```
