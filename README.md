@@ -46,7 +46,7 @@ make
 ```
 # Useful information for modification
 ## Based on
-[RaspberryPi (gc9a01-overlay)](https://github.com/juliannojungle/gc9a01-overlay/blob/main/gc9a01-overlay.dts)
+[RaspberryPi (gc9a01-overlay)](https://github.com/juliannojungle/gc9a01-overlay/blob/main/gc9a01-overlay.dts)  
 [OrangePi (ili9486 and so .dts)](https://github.com/dev-null2019/orangepizero2w35tft/blob/main/joyit35a-overlay.dts)
 ## Allwinner pin numeration
 You can see that pins are called by Letter and Number: Example: P**H5** or P**I7**...  
@@ -66,4 +66,5 @@ Use this table to relationate, letter and ID.
 
 For the given example:  ```<&pio 8 6 0>```   
 It is: P**I6**  
-Format is: ```<&pio PortID Pin 0>```
+Format is: ```<&pio PortID Pin 0>```  
+The last number: 0 means active-high (3.3v means ON) and 1 active-low (0v means ON).
