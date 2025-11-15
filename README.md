@@ -1,6 +1,23 @@
 # gc9a01-overlay-orange-pi-zero-2w
 This is a repo that contains and show how to use gc9a01-overlay.dts on OrangePi. For using with the kernel module fbtft to show image on a round TFT.
 
+# How to use it
+
+Check ``cat /boot/orangepiEnv.txt`` that contains the line: ``user_overlays=gc9a01-overlay`` (DO NOT ADD IT MANUALLY)  
+```
+verbosity=1  
+bootlogo=false  
+console=both  
+disp_mode=1920x1080p60  
+overlay_prefix=sun50i-h616  
+rootdev=UUID=eaa7fbfc-c2d4-469e-b037-a160948a9c70  
+rootfstype=ext4  
+user_overlays=gc9a01-overlay  
+```
+
+# What i am using
+OrangePi Zero 2W (1.5GB) with Ubuntu22 kernel 6.1.31-sun50iw9
+
 # Useful information for modification
 
 ## Allwinner pin numeration
