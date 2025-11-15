@@ -42,7 +42,7 @@ struct _fbg *fbg = fbg_fbdevSetup((char*)fbdev, 0);
 Compile and run:
 ```
 make
-./quickstart
+./earth
 ```
 # Useful information for modification
 
