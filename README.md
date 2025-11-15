@@ -28,10 +28,16 @@ cd
 git clone https://github.com/grz0zrg/fbg
 cd fbg/examples
 ```
-Replace, in **earth.c** file, the line:
-
+Replace (to use our device), in **earth.c** file, the line:
+```
+struct _fbg *fbg = fbg_fbdevInit();
+```
 By:
-
+```
+const char *fbdev = "/dev/fb1";
+struct _fbg *fbg = fbg_fbdevSetup((char*)fbdev, 0);
+```
+Compile and run:
 ```
 make
 ./quickstart
