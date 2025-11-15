@@ -2,7 +2,9 @@
 This is a repo that contains and show how to use **gc9a01-overlay.dts** on **OrangePi**. For using with the kernel module **fbtft** to show image on a round TFT.
 
 # What i am using
+## System
 OrangePi Zero 2W (1.5GB) with Ubuntu22 kernel 6.1.31-sun50iw9
+## Wiring
 
 # How to use it
 - Compile and setup: ``sudo orangepi-add-overlay gc9a01-overlay.dts``
@@ -25,6 +27,12 @@ user_overlays=gc9a01-overlay
 cd
 git clone https://github.com/grz0zrg/fbg
 cd fbg/examples
+```
+Replace, in **earth.c** file, the line:
+
+By:
+
+```
 make
 ./quickstart
 ```
