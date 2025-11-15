@@ -5,6 +5,15 @@ This is a repo that contains and show how to use **gc9a01-overlay.dts** on **Ora
 ## System
 OrangePi Zero 2W (1.5GB) with Ubuntu22 kernel 6.1.31-sun50iw9
 ## Wiring
+| TFT Pin | Pin |
+|----------------|---------------------------|
+| VCC            | (3.3v)                     |
+| GND            | (GND)                          |
+| CS             | PH5                        |
+| RESET          | PI6                        |
+| DC / RS        | PH4                        |
+| MOSI           | PH7                        |
+| SCK/SCL           | PH6                        |
 
 # How to use it
 - Copy the provided **gc9a01-overlay.dts** to /tmp
